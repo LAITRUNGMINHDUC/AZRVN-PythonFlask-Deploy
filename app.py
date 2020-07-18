@@ -8,3 +8,6 @@ def index():
     my_str = my_str + '<br> Show Request <br>'
     my_str = my_str + '<pre>{}</pre>'.format(request.headers)
     return my_str
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
